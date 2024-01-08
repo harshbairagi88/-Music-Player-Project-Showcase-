@@ -3,4 +3,9 @@
     background-size: cover;
 }
 
-
+@media (max-width : 667px) {
+    #main{
+        width: 90vw;
+        height: 90vh;
+    }
+}
