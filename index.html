@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="Satranga(PaglaSongs).mp3"></audio>
+    <div class="h-screen w-full  bg-zinc-800 flex justify-center items-center text-black">
+        <div class="h-[80vh] w-[30vw] bg-[#58b368] rounded-3xl p-5 flex flex-col justify-evenly items-center">  
+            <h1 class="text-4xl capitalize font-semibold ">Music player</h1>
+            <div id="photo" class="h-[20vh] w-[20vh] rounded-full bg-lime-300"></div>
+            <div class="text-center">
+                <div id="title" class="  text-3xl font-serif">Satranga</div>
+                <div id="artist" class=" capitalize text-md">arjit singh</div>
+            </div>
+            <div id="progress-container" class=" w-full">
+                <input type="range" class="w-full cursor-pointer outline-none h-1 bg-zinc-700"  value="0">
+                <div id="meter" class="flex justify-between items-center">
+                    <div id="initial-time">00:00</div>
+                    <div id="final-time"></div>
+                </div>
+            </div>
+            <div class="text-4xl  cursor-pointer  flex items-center gap-7">
+                <i id="previous " class="ri-skip-back-fill"></i>         
+                <i id="start" class="ri-play-fill text-6xl"></i>
+                <i id="forword" class="ri-skip-forward-fill"></i>
+            </div> 
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
